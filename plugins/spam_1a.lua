@@ -1,18 +1,17 @@
-if matches[1] == "chat_add_user"  and is_sudo(msg) then
-	return [[ spam
-	]]
- end
+      description_rules(msg, nama)
+   elseif matches[1] == "chat_del_user" then
+       local bye_name = msg.action.user.first_name
+       return 'spam'
+   end
 end
- return {
-	description = "Chat With Robot Server",
-	usage = {
-	    sudo = {
-	    "chat_add_user : send chat_add_user to chat" },
-	},
-	patterns = {
-		"^chat_add_user$",
-},
-	run = run,
-    --privileged = true,
-	pre_process = pre_process
+
+return {
+   description = "Service plugin that sends a custom message when an user enters a chat.",
+   usage = "Welcoming new member.",
+   patterns = {
+      "^!!tgservice (chat_add_user)$",
+      "^!!tgservice (chat_add_user_link)$",
+      "^!!tgservice (chat_del_user)$",
+   },
+   run = run
 }
