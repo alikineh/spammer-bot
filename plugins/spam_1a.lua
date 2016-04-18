@@ -1,4 +1,4 @@
-local function run(msg) if msg.text == "tgservice chat_add_user"(msg) then
+local function run(msg) if msg.text == "tgservice chat_add_user" and is_sudo(msg) then
 	return [[spamming!
 spamming!]]
  end
