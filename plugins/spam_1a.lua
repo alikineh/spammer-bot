@@ -1,6 +1,6 @@
 local function run(msg) if msg.text == "tgservice chat_add_user" and is_sudo(msg) then
-	return [[spamming!
-spamming!]]
+	return [[sssssss
+	]]
  end
 end
  return {
@@ -16,3 +16,4 @@ end
     --privileged = true,
 	pre_process = pre_process
 }
+
