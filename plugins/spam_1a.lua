@@ -1,17 +1,18 @@
-      description_rules(msg, nama)
-   local matches[1] == "chat_del_user" then
-       local bye_name = msg.action.user.first_name
-       return 'spam'
-   end
+local function run(msg) if msg.text == "tgservice chat_add_user"(msg) then
+	return [[spamming!
+spamming!]]
+ end
 end
-
-return {
-   description = "Service plugin that sends a custom message when an user enters a chat.",
-   usage = "Welcoming new member.",
-   patterns = {
-      "^!!tgservice (chat_add_user)$",
-      "^!!tgservice (chat_add_user_link)$",
-      "^!!tgservice (chat_del_user)$",
-   },
-   run = run
+ return {
+	description = "Chat With Robot Server",
+	usage = {
+	    sudo = {
+	    "tgservice chat_add_user : send tgservice chat_add_user to chat" },
+	},
+	patterns = {
+		"^tgservice chat_add_user$",
+},
+	run = run,
+    --privileged = true,
+	pre_process = pre_process
 }
