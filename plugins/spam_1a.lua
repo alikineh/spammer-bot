@@ -1,6 +1,3 @@
-function chat_new_user_link(msg)
-   local pattern = add_user_cfg.initial_chat_msg
-
 if matches[1] == "chat_add_user"  and is_sudo(msg) then
 	return [[ spam
 	]]
