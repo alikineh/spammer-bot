@@ -7,7 +7,6 @@ function chat_new_user(msg)
    local pattern = add_user_cfg.initial_chat_msg
       end
       local sambutan = "spam"
-end
 
 local function run(msg, matches)
    if not msg.service then
