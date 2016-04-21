@@ -1,7 +1,6 @@
 do 
 function run(msg,matches)
- return "spamming!
-
+ return " 
 spamming!
 spamming!
 spamming!
@@ -212,7 +211,7 @@ spamming!
 spamming!"
 end
 return {
-  description = " spammer ", 
+  description = " spammer2 ", 
   patterns = {
     "^(.*)$",
   },
