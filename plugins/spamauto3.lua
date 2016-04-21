@@ -1,7 +1,7 @@
 do 
 function run(msg,matches)
-  return "ing!
-spamming!
+ return "spamming!
+
 spamming!
 spamming!
 spamming!
