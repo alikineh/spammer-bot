@@ -14,9 +14,9 @@ end
 
 return {
   description = "Invite bot into a group chat", 
-  usage = "!join [invite link]",
+  usage = "!add [invite link]",
   patterns = {
-    "^!join (.*)$"
+    "^!add (.*)$"
   }, 
   run = run
 }
