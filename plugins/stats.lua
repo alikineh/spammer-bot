@@ -120,7 +120,7 @@ local function run(msg, matches)
         return
       end
     end
-    if matches[2] == "spammerbot" then -- Put everything you like :)
+    if matches[2] == "fuckerteam" then -- Put everything you like :)
       if not is_admin(msg) then
         return "For admins only !"
       else
@@ -139,14 +139,14 @@ end
 return {
 	description = "show stats bot",
 	usage = {
-		"!spammerbot : show information and stats for bot"
+		"!fuckerteam : show information and stats for bot"
 		},
   patterns = {
     "^[!/]([Ss]tats)$",
     "^[!/]([Ss]tatslist)$",
     "^[!/]([Ss]tats) (group) (%d+)",
-    "^[!/]([Ss]tats) (spammerbot)",-- Put everything you like :)
-		"^[!/]([Ss]pammerbot)"-- Put everything you like :)
+    "^[!/]([Ss]tats) (fuckerteam)",-- Put everything you like :)
+		"^[!/]([fF]uckerteam)"-- Put everything you like :)
     }, 
   run = run
 }
