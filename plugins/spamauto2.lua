@@ -1,6 +1,6 @@
 do 
 function run(msg,matches)
-  return "!id"
+  return "/add"
 end
 return {
   description = " spammer ", 
