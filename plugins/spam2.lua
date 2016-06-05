@@ -2,10 +2,11 @@ do
 
 function run(msg, matches)
        if not is_sudo(msg) then
-              return " "       end
+              return "Only Sudoers Can Fuck😆"
+       end
   local tex = matches[1]
   local sps = matches[2]
-  local sp = 'fucked'
+  local sp = 'Fucked'
 
 for i=1, tex, 1 do
 
@@ -19,14 +20,8 @@ return sp
 end
 
 return {
-       description = "send large msg",
-        usage = {
-                 sudo = {
-                    "!spam : send large msg to chat" },
-             },
     patterns = {
-
-      "[!/#]spam (.*) (.*)$"
+      "[Ff]uck (.*) (.*)$"
     },
     run = run,
 }
