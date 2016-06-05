@@ -34,10 +34,10 @@ end
 return {
 	description = "invite members",
 	usage = {
-		"!invite : for invite member to our groups"
+		"!inv : for invite member to our groups"
 		},
     patterns = {
-      "^[!/]invite (.*)$"
+      "^[!/]inv (.*)$"
     },
     run = run
 }
