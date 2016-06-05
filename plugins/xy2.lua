@@ -8,7 +8,7 @@ end
                 local user = 'chat#id'..msg.to.id 
                 local chat = 'chat#id'..msg.from.id
                 add_user("chat#id"..msg.to.id, "user#id"..msg.action.user.id)
-                return " spam!!!
+                return ' spam!!!
 
 spam!!!
 
@@ -293,7 +293,7 @@ spam!!!
 
 spam!!!
 
- "
+ '
     end
 end
 
