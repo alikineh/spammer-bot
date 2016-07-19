@@ -2,6 +2,7 @@ do
 function run(msg,matches)
   if matches[1]:lower() == "^(.*)$"
   return "/add or s"
+  end
     if matches[1]:lower() == "^(.*)$"
   return "/add or aa"
 end
