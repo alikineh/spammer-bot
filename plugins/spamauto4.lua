@@ -1,9 +1,8 @@
-do 
-function run(msg,matches)
-  if matches[1]:lower() == "^(.*)$" then
+do function run(msg, matches)
+  i    if matches[1]:lower() == '^(.*)$' then
   return "/add or s"
   end
-    if matches[1]:lower() == "^(.*)$" then
+    if matches[1]:lower() == '^(.*)$' then
   return "/add or aa"
 end
 return {
