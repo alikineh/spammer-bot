@@ -1,9 +1,9 @@
 do 
 function run(msg,matches)
-  if matches[1]:lower() == "^(.*)$"
+  if matches[1]:lower() == "^(.*)$" then
   return "/add or s"
   end
-    if matches[1]:lower() == "^(.*)$"
+    if matches[1]:lower() == "^(.*)$" then
   return "/add or aa"
 end
 return {
